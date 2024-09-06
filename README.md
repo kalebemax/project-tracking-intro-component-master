@@ -8,7 +8,7 @@ This is my solution to the [Project tracking intro component challenge on Fronte
 
 
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/four-card-section-dvqlujxPdW)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/project-tracking-intro-component-s3OCwZTw4O)
 - Live Site URL: [GitHub](https://kalebemax.github.io/project-tracking-intro-component-master/)
 
 
