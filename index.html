@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Title -->
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <!-- Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <!-- Tailwind Css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+</head>
+<body class="font-[Barlow] flex flex-col justify-center items-center w-screen h-screen p-0 m-0 lg:overflow-hidden">
+  <main class="lg:flex lg:items-center lg:justify-center lg:mr-20">
+    <!-- Header Elements -->
+    <header class="flex justify-between items-center -mt-10">
+      <!-- Logo -->
+      <img class="ml-10 w-7 lg:w-9 lg:-mt-[265px] lg:self-start lg:-mr-9" src="images/logo.svg" alt="logo-header">
+      <!-- Menu toggle for mobile devices -->
+      <span id="btn" class="m-5 mr-10 order-1 lg:hidden cursor-pointer"><img src="images/icon-hamburger.svg" alt="icon-hamburger">
+      </span>
+      <menu id="items" class="font-[Barlow] font-bold p-5 w-80 border-black h-auto text-center hidden shadow-2xl mt-40 ml-24 fixed bg-white">
+          <li class="hover:text-slate-500 transition-all cursor-pointer hover:underline">PRODUCT</li>
+          <li class="m-3 hover:text-slate-500 transition-all cursor-pointer hover:underline">FEATURES</li>
+          <li class="m-3 hover:text-slate-500 transition-all cursor-pointer hover:underline">PRICING</li> <hr class="w-60 -mr-40 m-4">
+          <li class="font-light hover:text-slate-400 transition-all cursor-pointer hover:underline">LOGIN</li>
+      </menu>
+    </header>
+    <!-- Second menu visible on large screens -->
+    <menu class="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:-ml-[990px] lg:mb-[550px] lg:space-x-8 lg:order-2 lg:font-bold">
+      <li class="hover:text-slate-500 transition-all cursor-pointer hover:underline">PRODUCT</li>
+      <li class="m-3 hover:text-slate-500 transition-all cursor-pointer hover:underline">FEATURES</li>
+      <li class="m-3 hover:text-slate-500 transition-all cursor-pointer hover:underline">PRICING</li> 
+      <li class="font-light hover:text-slate-400 transition-all cursor-pointer hover:underline">LOGIN</li>
+    </menu>
+    <!-- Devices Illustration -->
+    <img class="w-[90%] ml-[50px] mt-10 lg:mt-20 lg:mr-20 lg:order-1" src="images/illustration-devices.svg" alt="illustration-devices">
+    <!-- Headings and Paragraphs Section -->
+    <section class="flex flex-col justify-center items-center mt-10 lg:mr-20 lg:order-[0]">
+      <p class="text-sm font-semibold rounded-full self-start p-2 -mb-1 ml-12 lg:ml-0 bg-slate-900 text-white">NEW</p>
+      <p class="font-light text-xl -mt-8 mr-10 lg:mr-52">MONOGRAPH DASHBOARD</p>
+      <h1 class="font-[Barlow] font-bold text-3xl lg:text-4xl text-slate-900 mt-5 ml-10 lg:ml-0">POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+      <p class="self-start ml-[43px] lg:ml-0 mt-2 text-xl m-10 lg:m-10">
+        Project planning and time tracking for agile teams 
+      </p>
+      <div class="self-start rounded-md bg-red-600 hover:bg-red-500 transition-all cursor-pointer text-white p-3 ml-12 lg:ml-0 mb-10 font-semibold">
+         SCHEDULE A DEMO
+      </div> 
+      <div class="font-light self-end -mt-[77px] mr-24 lg:mr-56">
+        TO SEE A LIVE PREVIEW
+      </div>
+    </section>
+  </main>
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
